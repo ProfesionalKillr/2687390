@@ -23,7 +23,7 @@ public class ejerciciofor {
         vueltas=billete-acumulador;
         System.out.println("Sus vueltas son: " + vueltas + "¿Cuenta con telefonia movil exito?");
         telefonia=leer.next();
-        if (telefonia.equals("si")){
+        if (telefonia.equalsIgnoreCase("si")){
             System.out.println("Los minutos adquiridos en su compra son: " + contador);
         }
         else{
