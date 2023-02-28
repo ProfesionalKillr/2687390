@@ -1,7 +1,7 @@
 
 import java.util.Random;
 import java.util.Scanner;
-public class moneda {
+public class reto3 {
     public static void main(String[] args) throws Exception {
         Scanner lectura=new Scanner (System.in);
         Random aleatorio=new Random ();
