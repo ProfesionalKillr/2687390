@@ -1,16 +1,16 @@
 import java.util.Scanner;
-public class reto4 {
+public class challenge4 {
     public static void main(String[]args) {
-        Scanner leer=new Scanner(System.in);
-        int seleccionCompu = (int)(Math.random() * 3) + 1;
+        Scanner input =new Scanner(System.in);
+        int computerSelection  = (int)(Math.random() * 3) + 1;
         System.out.print("Indique su seleccion 1=Piedra, 2=Papel, 3=Tijera: ");
-        int seleccionUsuario = leer.nextInt();
+        int userSelection  = input .nextInt();
         System.out.print("La computadora habia escogido: ");
-        switch ( seleccionCompu )
+        switch ( computerSelection  )
         {
             case 1:
                 System.out.println("Piedra");
-                switch ( seleccionUsuario )
+                switch ( userSelection  )
                 {
                    case 1: 
                    System.out.println("Empate!"); 
@@ -26,7 +26,7 @@ public class reto4 {
  
             case 2:
                 System.out.println("Papel");
-                switch ( seleccionUsuario )
+                switch ( userSelection  )
                 {
                    case 1: 
                    System.out.println("Perdio"); 
@@ -42,7 +42,7 @@ public class reto4 {
  
             case 3:
                 System.out.println("Tijera");
-                switch ( seleccionUsuario )
+                switch ( userSelection  )
                 {
                    case 1: 
                    System.out.println("Gano!"); 
@@ -56,6 +56,6 @@ public class reto4 {
                 }
                 break;
         }
-        leer.close();
+        input .close();
     }
 }
